@@ -42,4 +42,10 @@ gcc -fsanitize=undefined -o hello hello.c
 gcc -fsanitize=thread -o hello hello.c
 ```
 
+## Valgrind
+```
+valgrind --tool=memcheck ./hello
+```
+**WARNING:** Do not run address sanitizer with Valgrind Memcheck. Long story short you'll run out of memory.
+
 Discussion regarding this workshop during and prior will take place in [#workshop-c](https://vikelabs.slack.com/archives/C01ERJAB1PB) 
